@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  background: var(--body-bg-color);
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+section,
+form,
+a {
+  padding-left: 36px;
+}
+
+header {
+  padding-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 92px;
+}
+
+header img {
+  width: 389px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 50px;
+}
+
+section h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+section h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+section p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+form {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 52px;
+  width: 798px;
+}
+
+#wrapper-information {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+label {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--form-color);
+}
+
+#wrapper-email {
+  position: relative;
+  display: flex;
+}
+
+input {
+  width: 750px;
+  padding-left: 10px;
+  color: #6a6a6a;
+  border: 0px;
+  border-left: 5px solid var(--title-color);
+  background: #fff;
+}
+
+button {
+  background: var(--bg-button-color);
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 237px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--bg-button-color);
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+#photo {
+  width: 50%;
+  background-image: url(./assets/read_news.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+@media only screen and (min-width: 1920px) {
+  input {
+    width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  input {
+    width: 1300px;
+  }
+}
